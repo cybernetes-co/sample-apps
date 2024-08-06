@@ -1,0 +1,12 @@
+{
+  "name": "container-express-app",
+  "version": "0.0.1",
+  "description": "Demo app for container demo",
+  "main": "app.js",
+  "author": "warachet@cybernetes.co",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pug": "^3.0.3"
+  }
+}

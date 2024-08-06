@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: first-web-deploy
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: first-web
+  template:
+    metadata:
+      labels:
+        app: first-web
+    spec:
+      containers:
+        - name: deploy-first-web-pod
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          image: my-web-app:latest
